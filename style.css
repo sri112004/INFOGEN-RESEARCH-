@@ -1,0 +1,174 @@
+body {
+    font-family: 'Bebas Neue', sans-serif; /* Use your Google Font here */
+    background-image: url('images/back4k.jpg'); /* Add your image path here */
+    background-size: cover; /* Ensures the image covers the entire body */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    margin: 0;
+    padding: 0;
+}
+
+.card-title{
+    font-style: italic;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #448EE4;
+}
+
+.card-text{
+    font-family: 'Georgia', serif;
+}
+
+span{
+    color: rgb(255, 255, 255);
+}
+
+.underline-hover {
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Position relative for pseudo-element positioning */
+  }
+
+  .underline-hover::after {
+    content: ''; /* Create an empty pseudo-element */
+    position: absolute; /* Position it absolutely */
+    left: 0; /* Align it to the left of the parent element */
+    bottom: 0; /* Position it at the bottom of the parent element */
+    width: 100%; /* Make it as wide as the parent */
+    height: 2px; /* Set the thickness of the underline */
+    background-color: #0d99e5; /* Color of the underline */
+    transform: scaleX(0); /* Initially hide the underline */
+    transform-origin: bottom right; /* Scale from the right */
+    transition: transform 0.3s ease; /* Smooth transition for the underline */
+  }
+
+  .underline-hover:hover::after {
+    transform: scaleX(1); /* Show the underline on hover */
+    transform-origin: bottom left; /* Scale from the left on hover */
+  }
+
+
+
+h2{
+    color: lightblue;
+    font-family: 'Anton', sans-serif;
+  
+    
+}
+
+.gradient-text {
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Bebas Neue', sans-serif;
+            background: linear-gradient(270deg, #1580f1, #dbd4cf, green, #6a82fb, #dbd4cf);
+            background-size: 600% 600%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: colorChange 10s ease infinite;
+    
+}
+
+@keyframes colorChange {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+.card {
+    box-shadow: 0 4px 8px rgba(30, 81, 236, 0.1);
+    border-radius: 5px;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale effect */
+    transition: transform 0.3s ease; /* Smooth transition */
+    background-color: rgb(189, 202, 208); /* Sky blue background on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+}
+
+.card .card-body {
+    transition: background-color 0.3s ease; /* Ensure smooth transition for the card body */
+    padding: 15px; /* Maintain padding for card content */
+}
+
+
+
+
+
+
+
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+
+.footer-nav {
+    margin: 15px 0;
+}
+
+.footer-nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+    color: inherit; /* Links will inherit the color based on your background */
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+
+@media (max-width: 700px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .socialIcons a {
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+
+
+h2 {
+    background: linear-gradient(45deg, #dd0df9, #0a21ee); /* Gradient color for headings */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
